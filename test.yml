@@ -1,0 +1,11 @@
+---
+- hosts: 
+  tasks:
+    - debug:
+        msg: wow!
+
+- hosts: other
+  connection: local
+  tasks:
+    - debug:
+        msg: wow such local!
